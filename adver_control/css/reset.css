@@ -1,0 +1,192 @@
+@CHARSET "UTF-8";
+
+@font-face {
+    font-family: 'SDG_B';
+    src: url('font/AppleSDGothicNeoB.eot'),
+    url('font/AppleSDGothicNeoB.woff') format('woff'),
+    url('font/AppleSDGothicNeoB.ttf') format('truetype'),
+    url('font/AppleSDGothicNeoB.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SDG_R';
+    src: url('font/AppleSDGothicNeoR.eot'),
+    url('font/AppleSDGothicNeoR.woff') format('woff'),
+    url('font/AppleSDGothicNeoR.ttf') format('truetype'),
+    url('font/AppleSDGothicNeoR.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'SDG_L';
+    src: url('font/AppleSDGothicNeoL.eot'),
+    url('font/AppleSDGothicNeoL.woff') format('woff'),
+    url('font/AppleSDGothicNeoL.ttf') format('truetype'),
+    url('font/AppleSDGothicNeoL.otf') format('opentype');
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    vertical-align: middle;
+    font-family:'SDG_R', NanumGothic, Arial, Helvetica, sans-serif, "굴림체" ;
+    font-size:16px;
+    font-weight:normal;
+    color:#555;
+    letter-spacing: -0.3px;
+    line-height: 22px;
+}
+
+body{
+    min-width: 320px;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+fieldset, img, abbr,acronym { border:0 none; }
+ol, ul,li { list-style:none; margin: 0; padding: 0;}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+    border:0 none;
+}
+caption{display:none;}
+th, td {
+    text-align:center;
+    font-weight: inherit;
+}
+
+address, strong, em, cite {
+    font-weight:inherit;
+    font-style:inherit;
+}
+
+ins { text-decoration:none; }
+del { text-decoration:line-through; }
+
+blockquote:before, blockquote:after, q:before, q:after { content:""; }
+blockquote,q { quotes:"" ""; }
+.cf:after, .cf:before {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 1%;
+    height: 0;
+}
+
+a {color: inherit; text-decoration: none; outline: none}
+a:hover, a:active {text-decoration: none;}
+a[href^="tel"]{color:inherit;text-decoration:none;}
+
+hr {display:none;}
+
+button{appearance: none;
+    background: none;
+    border: 0;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    cursor:pointer;}
+
+/* input 기본 스타일 초기화 */
+input {
+    font-family: inherit;
+    border: 1px solid #d7d7d7;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 16px;
+}
+
+input[type=text], input[type=password]{
+    padding: 7px;
+}
+
+input[type=password]{
+    letter-spacing: 8px;
+}
+
+input[type=checkbox]{
+    width: 0;
+    height: 0;
+    border: 0;
+    margin: 0;
+}
+
+input:disabled{
+    background:#fcfcfc;
+}
+
+label{cursor:pointer;}
+
+/* IE10 이상에서 input box 에 추가된 지우기 버튼 제거 */
+input::-ms-clear { display: none; }
+
+/* input type number 에서 화살표 제거 */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+textarea{
+    margin: 0;
+    font-size: 16px;
+    font-family: inherit;
+    border: 1px solid #e3e3e3;
+    border-radius: 0;
+    resize:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+/* Select box 스타일 초기화
+select {
+    padding: 7px 20px;
+    font-size: 15px;
+    font-family: inherit;
+    letter-spacing: -1.2px;
+    font-weight: 300;
+    color: #333;
+    cursor: pointer;
+    border: 0;
+    border-radius: 0;
+    background:#fff url(../images/sub/select_bg.png) no-repeat;
+    background-position: 82% 50%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}*/
+
+/* IE 에서 Select box 화살표 제거 */
+select::-ms-expand { display: none; }
+
+select:focus,input:focus,button:focus,textarea:focus {
+    outline: none;}
+
+pre{white-space : pre-line;}
+
+.hidden{display:none;}
